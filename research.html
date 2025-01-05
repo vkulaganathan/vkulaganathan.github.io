@@ -40,7 +40,7 @@
             <div class="span3 bs-docs-sidebar" id="navparent">
                <ul class="nav nav-list bs-docs-sidenav" data-spy="affix" data-offset-top="200" data-offset-bottom="260">
                   <li><a href="#statement"> Research </a></li>
-                  <li><a href="#podcasts"> Podcasts </a></li>
+                  <li><a href="#podcasts"> Podcasts and Webinars </a></li>
 <!--                  <li><a class="subhead" href="#Penatibus"> Penatibus </a></li>
                   <li><a class="subhead" href="#QuamIdLeo"> Quam Id Leo  </a></li>
                   <li><a class="subhead" href="#Ullamcorper"> Ullamcorper </a></li>
@@ -132,6 +132,19 @@
 
         </tbody>
     </table>
+
+<script>
+    document.addEventListener('play', function(e){
+        var audios = document.getElementsByTagName('audio');
+        for(var i = 0, len = audios.length; i < len;i++){
+            if(audios[i] != e.target){
+                audios[i].pause();
+            }
+        }
+    }, true);
+</script>
+
+
 
 </body>
 </html>
