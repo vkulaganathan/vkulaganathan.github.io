@@ -40,7 +40,7 @@
             <div class="span3 bs-docs-sidebar" id="navparent">
                <ul class="nav nav-list bs-docs-sidenav" data-spy="affix" data-offset-top="200" data-offset-bottom="260">
                   <li><a href="#statement"> Research </a></li>
-                  <li><a href="#podcasts"> Podcasts and Webinars </a></li>
+                  <li><a href="#podcasts"> Webinars and Podcasts </a></li>
 <!--                  <li><a class="subhead" href="#Penatibus"> Penatibus </a></li>
                   <li><a class="subhead" href="#QuamIdLeo"> Quam Id Leo  </a></li>
                   <li><a class="subhead" href="#Ullamcorper"> Ullamcorper </a></li>
@@ -135,14 +135,15 @@
 
 <script>
     document.addEventListener('play', function(e){
-        var audios = document.getElementsByTagName('audio');
-        for(var i = 0, len = audios.length; i < len;i++){
-            if(audios[i] != e.target){
-                audios[i].pause();
+        var mediaElements = document.querySelectorAll('audio, video');
+        for(var i = 0, len = mediaElements.length; i < len; i++){
+            if(mediaElements[i] != e.target){
+                mediaElements[i].pause();
             }
         }
     }, true);
 </script>
+
 
 
 
@@ -152,9 +153,27 @@
                <hr>
                <section id="podcasts">
                   <div class="page-header">
-                     <h3>Podcasts and Webinars</h3>
+                     <h3>Webinars and Podcasts</h3>
                   </div>
                   <p><strong>We are committed to pursuing original ideas. <p style="color: deepskyblue;">------Take a listen !------</strong></p>
+
+
+                  <div class="row-fluid">
+                     <div class="span3">
+                        <a class="thumbnail">
+                        <img src="thumbs/webinar.jpeg" alt="webinars"/>
+                        </a>
+                     </div>
+                     <div class="span9">
+                        <h4>Webinar Hosted by The-Scientist Magazine</a></h4>
+                        <p>For more information visit: <a href=https://www.the-scientist.com/the-scientist-s-journal-club-cancer-71189 target="_blank">The Scientist’s Journal Club: Cancer</a></p>
+                        <p>
+                        <iframe src="https://drive.google.com/file/d/1x_YSTHS09gza-Yc_cNwes0Jzu3T1P6BU/preview" width="320" height="180" allowfullscreen></iframe>
+			</p>
+                     </div>
+                  </div>
+                  </br>
+                  </br>
 
                   <div class="row-fluid">
                      <div class="span3">
@@ -194,23 +213,6 @@
                   </br>
                   </br>
 
-
-
-                  <div class="row-fluid">
-                     <div class="span3">
-                        <a class="thumbnail">
-                        <img src="thumbs/webinar.jpeg" alt="webinars"/>
-                        </a>
-                     </div>
-                     <div class="span9">
-                        <h4>Webinar Hosted by The-Scientist Magazine</a></h4>
-                        <p>For more information visit: <a href=https://www.the-scientist.com/the-scientist-s-journal-club-cancer-71189 target="_blank">The Scientist’s Journal Club: Cancer</a></p>
-                        <p><iframe src="https://drive.google.com/file/d/1x_YSTHS09gza-Yc_cNwes0Jzu3T1P6BU/preview" width="320" height="180" allowfullscreen></iframe>
-			</p>
-                     </div>
-                  </div>
-                  </br>
-                  </br>
 
                   <div class="row-fluid">
                      <div class="span3">
