@@ -10,61 +10,9 @@
       <link href="css/bootstrap.min.css" rel="stylesheet">
       <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
       <link href="css/theme.css" rel="stylesheet">
-
-  <style>
-    .carousel-inner > .item > img, .carousel-image {
-       width: 100%;
-       object-fit: cover; /* This makes the image cover the area without distortion */
-    }
-/* Add these styles to your existing <style> block or create a new one */
-
-/* 1. Make the carousel a full-screen background */
-#main-carousel {
-  height: 100vh; /* Set height to 100% of the viewport height */
-  width: 100vw;  /* Set width to 100% of the viewport width */
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1; /* Make sure it's behind the header */
-}
-
-/* 2. Position the header and nav bar on top of the carousel */
-.jumbotron.subhead, .masthead {
-  position: relative; /* Changed from absolute to relative for better flow */
-  z-index: 10; /* Ensure they are on top of the carousel */
-  width: 100%;
-  background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background for readability */
-  border-bottom: none; /* Remove default borders */
-}
-
-.jumbotron.subhead {
-  padding-top: 20px;
-  padding-bottom: 10px;
-  margin-bottom: 0;
-}
-
-/* 3. Style the text for better visibility on the image */
-.jumbotron.subhead h1, .jumbotron.subhead p {
-  color: #ffffff; /* White text */
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.7); /* Add a subtle shadow to the text */
-}
-
-/* 4. Push the main page content down below the full-screen carousel */
-.row-fluid {
-  margin-top: 100vh; /* Push the start of the content down by the height of the screen */
-}
-/* We need to reset the margin for the carousel's parent row */
-.masthead + .row-fluid {
-    margin-top: 0;
-}
-
-
-
-  </style>
-
    </head>
    <body>
-      <div class="container-fluid">
+      <div class="container">
          <header class="jumbotron subhead" id="overview">
             <p class="lead"> Institute for Medical Genetics and Applied Genomics (IMGAG) </p>
             <h1>AG: Genetic Variants of Proximal Signaling</h1>
